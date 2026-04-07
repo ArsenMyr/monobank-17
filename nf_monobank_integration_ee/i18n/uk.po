@@ -1,0 +1,94 @@
+# Переклад Одоо сервера.
+# Цей файл містить переклад таких модулів:
+# 	* nf_monobank_integration_ee
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Одоо Сервер 17.0+е\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-19 12:36+0000\n"
+"PO-Revision-Date: 2024-03-19 12:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model,name:nf_sync_monobank.model_res_partner_bank
+msgid "Bank Accounts"
+msgstr "Банківські рахунки"
+
+#. module: nf_monobank_integration_ee
+#: model_terms:ir.ui.view,arch_db:nf_sync_monobank.nf_bank_sync_online
+msgid "Connect"
+msgstr "Підключити"
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model,name:nf_sync_monobank.model_res_currency
+msgid "Currency"
+msgstr "Валюта"
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model.fields,help:nf_sync_monobank.field_res_currency__full_name
+msgid "Currency name, according to ISO 4217 standard"
+msgstr "Назва валюти, згідно зі стандартом ISO 4217"
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model.fields,field_description:nf_sync_monobank.field_res_currency__full_name
+msgid "Full name"
+msgstr "Повне ім'я"
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model.fields,field_description:nf_sync_monobank.field_account_journal__has_monobank_online_payments_method
+msgid "Has Monobank Online Payments Method"
+msgstr "Має метод онлайн-платежів Monobank"
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model.fields,help:nf_sync_monobank.field_res_currency__numeric_code
+msgid "ISO Numeric Code for currency, according to ISO 4217 standard."
+msgstr "Числовий код ISO для валюти, згідно зі стандартом ISO 4217."
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model.fields,field_description:nf_sync_monobank.field_online_bank_statement_provider__interval_type
+msgid "Interval Type"
+msgstr "Тип інтервалу"
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model,name:nf_sync_monobank.model_account_journal
+msgid "Journal"
+msgstr "Журнал"
+
+#. module: nf_monobank_integration_ee
+#: model:account.payment.method,name:nf_sync_monobank.account_payment_method_monobank_online
+msgid "Monobank Online Payments"
+msgstr "Онлайн-платежі Monobank"
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model.fields,field_description:nf_sync_monobank.field_account_setup_bank_manual_config__acc_number_id
+#: model:ir.model.fields,field_description:nf_sync_monobank.field_online_bank_statement_provider__account_number_id
+#: model:ir.model.fields,field_description:nf_sync_monobank.field_res_partner_bank__acc_number_id
+msgid "Monobank account id"
+msgstr "Ідентифікатор рахунку Monobank"
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model.fields,field_description:nf_sync_monobank.field_online_bank_statement_provider__monobank_token
+#: model_terms:ir.ui.view,arch_db:nf_sync_monobank.nf_bank_sync_online
+msgid "Monobank token"
+msgstr "Токен Monobank"
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model.fields,field_description:nf_sync_monobank.field_res_currency__numeric_code
+msgid "Numeric Code"
+msgstr "Числовий код"
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model,name:nf_sync_monobank.model_online_bank_statement_provider
+msgid "Online Bank Statement Provider"
+msgstr "Постачальник онлайн банківської виписки"
+
+#. module: nf_monobank_integration_ee
+#: model:ir.model,name:nf_sync_monobank.model_account_payment_method
+msgid "Payment Methods"
+msgstr "Способи оплати"

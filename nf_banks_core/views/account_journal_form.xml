@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="view_account_journal_form_inherit_online_banks">
+        <field name="name">view.account.journal.form.inherit.online.banks</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='currency_id']" position="replace">
+                <field name="currency_id" options="{'no_create': True}"/>
+            </xpath>
+            <xpath expr="//field[@name='bank_account_id']" position="after">
+                <field name="account_online_link_id"
+                       widget="many2one_tags"
+                       string="Bank connection"
+                       invisible="bank_statements_source not in ['online_sync']"/>
+
+                <field name="account_online_account_id"
+                       widget="many2one_tags"
+                       string="Bank Account"
+                       domain="[('account_online_link_id', '=', account_online_link_id)]"
+                       invisible="bank_statements_source not in ['online_sync']"/>
+            </xpath>
+            <xpath expr="//field[@name='bank_account_id']" position="attributes">
+                <attribute name="invisible">bank_statements_source in ['online_sync']</attribute>
+            </xpath>
+            <xpath expr="//field[@name='bank_id']" position="attributes">
+                <attribute name="invisible">bank_statements_source in ['online_sync']</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

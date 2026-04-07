@@ -1,0 +1,189 @@
+<section class="container mb-4" style="font-family: sans-serif; color: black;">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+      <a href="#configuration" class="mx-3 font-weight-bold" style="font-size: 17px; text-decoration: none;">Configuration</a>
+      <a href="#support" class="mx-3 font-weight-bold" style="font-size: 17px; text-decoration: none;">Support</a>
+    </div>
+  </div>
+</section>
+
+<section class="container bg-light py-4 rounded shadow" style="font-family: sans-serif; color: black;">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+      <h2 class="display-4 font-weight-bold text-primary mb-4">
+        NetFrame Monobank Integration Enterprise
+      </h2>
+      <div class="col-lg-8 mx-auto">
+        <p class="lead" style="font-size: 20px;">
+          NetFrame Monobank Integration Enterprise provides seamless integration between Odoo and Monobank for automated online bank statement synchronization.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container py-4" style="font-family: sans-serif; color: black;">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="h1 font-weight-bold text-primary mb-4 text-center">Key Features</h2>
+      <ul class="list-group list-group-flush mx-auto" style="font-size: 17px; max-width: 800px;">
+        <li class="list-group-item">Fetching of online bank statements from Monobank</li>
+        <li class="list-group-item">Pull statements for custom date ranges on demand</li>
+        <li class="list-group-item">Scheduled statement synchronization</li>
+        <li class="list-group-item">Secure connection via Monobank API token</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container bg-light py-4 rounded shadow" style="font-family: sans-serif; color: black;">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="h2 font-weight-bold text-primary mb-4 text-center">How it Works</h2>
+      <ol class="list-group list-group-flush mx-auto" style="font-size: 17px; max-width: 800px;">
+        <li class="list-group-item">Create new Connection for Monobank in Odoo Accounting</li>
+        <li class="list-group-item">Enter your Monobank personal access token</li>
+        <li class="list-group-item">Connect and start fetching statements automatically or manually</li>
+        <li class="list-group-item">Required journal for each Bank Account will be created automatically</li>
+        <li class="list-group-item">View and manage bank statements directly in Odoo Accounting</li>
+      </ol>
+      <h2 class="h2 font-weight-bold text-primary mt-5 mb-4 text-center" id="workflow">Workflow</h2>
+      <p class="text-center lead" style="font-size: 20px;">Pull Bank statements right from connection form by pressing <b>Fetch Transactions</b></p>
+      <span class="d-block text-center display-4 mb-3">&#8595;</span>
+      <img class="img-fluid rounded mx-auto d-block" src="11.pull-from-connection-form.png" style="width: 80%; border: 1px solid lightgrey;">
+      <p class="text-center lead" style="font-size: 20px;">Pull Bank statements from Dashboard by pressing <b>Fetch Transactions</b> for any Monobank journal</p>
+      <span class="d-block text-center display-4 mb-3">&#8595;</span>
+      <img class="img-fluid rounded mx-auto d-block" src="11.pull-from-connection-form.png" style="width: 80%; border: 1px solid lightgrey;">
+      <p class="text-center lead" style="font-size: 20px;">Or pull by choosing a custom date range from Monobank Journal</p>
+      <span class="d-block text-center display-4 mb-3">&#8595;</span>
+      <img class="img-fluid rounded mx-auto d-block" src="10.pull-journal-wizzard.png" style="width: 80%; border: 1px solid lightgrey;">
+      <p class="text-center lead mt-4" style="font-size: 20px;">After this You will be redirected to the retrieved statements</p>
+      <span class="d-block text-center display-4 mb-3">&#8595;</span>
+      <img class="img-fluid rounded mx-auto d-block" src="13.pulled-stmt.png" style="width: 80%; border: 1px solid lightgrey;">
+      <h3 class="text-center font-weight-bold text-primary mt-5" style="font-size: 22px;">
+        For implementation and support, contact the <a href="mailto:odoo@netframe.org"><b>Netframe team</b></a>
+      </h3>
+      <h4 class="text-center mt-3" style="font-size: 17px;">For a detailed description of Settings, see the <a href="#configuration" style="font-size: 17px; font-weight: bold; text-decoration: none;">Configuration</a> section.</h4>
+    </div>
+  </div>
+</section>
+
+<section class="container py-4" id="configuration" style="font-family: sans-serif; color: black;">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="h1 font-weight-bold text-primary mb-4 text-center">Configuration</h2>
+    </div>
+    <div class="col-12 bg-light p-4 rounded shadow">
+      <h3 class="text-center h2 font-weight-bold text-primary mb-4">Getting Started</h3>
+      <p class="text-center lead mb-4" style="font-size: 18px;">
+        To start pulling online bank statements, configure the following in Odoo:
+      </p>
+      <ul class="list-group list-group-flush mx-auto mb-4" style="font-size: 17px; max-width: 800px;">
+        <li class="list-group-item d-flex justify-content-between">
+          Create a new Connection in Accounting &#8594; Online Synchronization
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;"></span>
+        </li>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="02.configuration-online-sync.png" style="width: 80%; border: 1px solid lightgrey;">
+        <li class="list-group-item d-flex justify-content-between">
+          Press New to proceed to creation form
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;"></span>
+        </li>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="03.new-sync.png" style="width: 80%; border: 1px solid lightgrey;">
+        <li class="list-group-item d-flex justify-content-between">
+          Enter connection Name, e.g. "Monobank"
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;">1</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Select "Monobank" as a Provider from selection
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;">2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Insert Your Monobank Token
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;">3</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Save changes & click "Connect to Monobank"
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;">4 & 5</span>
+        </li>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="04.connection%20form.png" style="width: 80%; border: 1px solid lightgrey;">
+        <li class="list-group-item d-flex justify-content-between">
+          You can get your Monobank Personal Access Token from your Monobank personal account
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;"></span>
+        </li>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="05.monobank-token.png" style="width: 80%; border: 1px solid lightgrey;">
+        <li class="list-group-item d-flex justify-content-between">
+          After successful connection, connection state will change to "Connected"
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;">1</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          By placing a check in Automatic synchronization Checkbox You can enable or disable Scheduled synchronization. Scheduled synchronization proceeds every 12 hours
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;">2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Next synchronization field contains a date of next Scheduled synchronization
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;">3</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Under the above-mentioned fields You can see Your fetched Bank Accounts. Reset button here should be pressed if Account fetching status hung up on "Waiting" status
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;">4</span>
+        </li>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="06.bank-connected.png" style="width: 80%; border: 1px solid lightgrey;">
+        <li class="list-group-item d-flex justify-content-between">
+          Journal for each Bank Account will be created Automatically.
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;"></span>
+        </li>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="07.journals-created.png" style="width: 80%; border: 1px solid lightgrey;">
+        <li class="list-group-item d-flex justify-content-between">
+          In every Monobank Journal You can add Outgoing Payment Method "Monobank Online Payments"
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;"></span>
+        </li>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="08.add-monobank-out-payment.png" style="width: 80%; border: 1px solid lightgrey;">
+        <li class="list-group-item d-flex justify-content-between">
+          You can Pull Banks statements for a custom date range from Monobank Journal by pressing "Sync Monobank" button:
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;"></span>
+        </li>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="09.sync-button-journal.png" style="width: 80%; border: 1px solid lightgrey;">
+        <li class="list-group-item d-flex justify-content-between">
+          In the wizard that opens choose a Date from
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;">1</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Choose a Date to
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;">2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          And press "Sync"
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;">3</span>
+        </li>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="10.pull-journal-wizzard.png" style="width: 80%; border: 1px solid lightgrey;">
+        <li class="list-group-item d-flex justify-content-between">
+          Right after You will be redirected to Pulled Bank Statements
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;"></span>
+        </li>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="13.pulled-stmt.png" style="width: 80%; border: 1px solid lightgrey;">
+        <li class="list-group-item d-flex justify-content-between">
+          You can pull statements from Dashboard. Statements will be pulled since Last Sync date (You can inspect it in Connection form)
+          To today's Date.
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;"></span>
+        </li>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="12.pull-from-dashboard.png" style="width: 80%; border: 1px solid lightgrey;">
+        <li class="list-group-item d-flex justify-content-between">
+          Also You can pull statements from Connection form by pressing "Fetch Transactions". Statements will be pulled since Last Sync date (You can inspect it in Connection form)
+          To today's Date.
+          <span class="badge badge-primary badge-pill" style="font-size: 17px;"></span>
+        </li>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="11.pull-from-connection-form.png" style="width: 80%; border: 1px solid lightgrey;">
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container py-4 bg-light rounded shadow" id="support" style="font-family: sans-serif; color: black;">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+      <h2 class="h1 font-weight-bold text-primary mb-4">Support</h2>
+      <p class="lead" style="font-size: 20px;">Author: <strong><a href="https://www.netframe.org/">Netframe</a></strong></p>
+      <p class="lead" style="font-size: 20px;">Email: <a href="mailto:odoo@netframe.org">odoo@netframe.org</a></p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_online_account_form_inherited_nf_banks_core" model="ir.ui.view">
+        <field name="name">account.online.account.form.banks.core</field>
+        <field name="model">account.online.account</field>
+        <field name="inherit_id" ref="account_online_synchronization.account_online_account_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="attributes">
+                <attribute name="create">true</attribute>
+            </xpath>
+            <xpath expr="//field[@name='account_number']" position="attributes">
+                <attribute name="readonly">0</attribute>
+            </xpath>
+
+            <xpath expr="//h1/field[@name='name']" position="attributes">
+                <attribute name="readonly">0</attribute>
+            </xpath>
+            <xpath expr="//field[@name='journal_ids']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

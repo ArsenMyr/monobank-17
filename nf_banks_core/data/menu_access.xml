@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_online_synchronization.menu_action_online_link_account" model="ir.ui.menu">
+        <field name="groups_id" eval="[(3, ref('base.group_no_one'))]"/>
+    </record>
+</odoo>

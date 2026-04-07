@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_online_link_tree_view_inherited" model="ir.ui.view">
+        <field name="name">account.online.link.tree.inherited</field>
+        <field name="model">account.online.link</field>
+        <field name="inherit_id" ref="account_online_synchronization.account_online_link_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="attributes">
+                <attribute name="create">true</attribute>
+            </xpath>
+        </field>
+    </record>
+    <record id="account_online_link_form_view_inherited" model="ir.ui.view">
+        <field name="name">account.online.link.form.inherited</field>
+        <field name="model">account.online.link</field>
+        <field name="inherit_id" ref="account_online_synchronization.account_online_link_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='client_id']" position="after">
+                <field name="name" readonly="0"/>
+                <field name="provider"/>
+            </xpath>
+            <xpath expr="//field[@name='provider_type']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='client_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_new_synchronization']" position="attributes">
+                <attribute name="invisible">provider in ['privatbank', 'monobank', 'ukrsib']</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_update_credentials']" position="attributes">
+                <attribute name="invisible">state == 'disconnected' or provider in ['privatbank', 'monobank', 'ukrsib']</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_reconnect_account']" position="attributes">
+                <attribute name="invisible">state != 'disconnected' or provider in ['privatbank', 'monobank', 'ukrsib']</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

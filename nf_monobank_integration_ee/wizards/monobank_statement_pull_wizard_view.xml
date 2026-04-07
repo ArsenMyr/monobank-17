@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="view_monobank_sync_wizard" model="ir.ui.view">
+    <field name="name">monobank.sync.wizard.form</field>
+    <field name="model">monobank.statement.pull.wizard</field>
+    <field name="arch" type="xml">
+        <form>
+            <group>
+                <field name="account_id"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+            </group>
+            <footer>
+                <button name="action_sync" string="Sync" type="object" class="btn-primary"/>
+                <button string="Cancel" special="cancel"/>
+            </footer>
+        </form>
+    </field>
+</record>
+</odoo>

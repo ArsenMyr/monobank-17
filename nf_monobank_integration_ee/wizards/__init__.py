@@ -1,0 +1,1 @@
+from . import monobank_statement_pull_wizard

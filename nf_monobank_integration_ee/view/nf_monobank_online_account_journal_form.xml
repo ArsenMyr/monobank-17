@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="view_account_journal_form">
+        <field name="name">view.account.journal.form.inherit.monobank.online</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_monobank_open_wizard"
+                        string="Pull Monobank Statements"
+                        icon="fa-refresh"
+                        type="object"
+                        class="oe_stat_button"
+                        invisible="bank_id != %(nf_monobank_integration_ee.res_bank_monobank)d"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

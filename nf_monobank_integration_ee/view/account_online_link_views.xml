@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_online_link_form_view_inherited_monobank" model="ir.ui.view">
+        <field name="name">account.online.link.form.inherited.monobank</field>
+        <field name="model">account.online.link</field>
+        <field name="inherit_id" ref="account_online_synchronization.account_online_link_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='provider']" position="after">
+                <field name="monobank_token" password="true" invisible="provider != 'monobank'"/>
+            </xpath>
+            <xpath expr="//button[@name='action_new_synchronization']" position="after">
+                <button name="get_client_information"
+                        type="object"
+                        string="Connect to Monobank"
+                        class="btn-primary"
+                        invisible="provider != 'monobank' or state == 'connected'"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
